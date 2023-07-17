@@ -45,3 +45,34 @@ if x:
     print("True")
 else:
     print("False")
+
+###
+
+x = (1, 'two', 3.0, [4, 'four'], 5)
+y = (1, 'two', 3.0, [4, 'four'], 5)
+
+print('x is {}'.format(x))
+print(type(x))
+print(type(y))
+
+print(id(x))
+print(id(y))
+
+print(id(x[0]))
+print(id(y[0]))
+
+if x[0] is y[0]:
+    print("Yep")
+else:
+    print("Nope")
+
+
+if isinstance(x, tuple):
+    print("Tuple")
+elif isinstance(x, list):
+    print("List")
+else:
+    print("Nope")
+
+
+
